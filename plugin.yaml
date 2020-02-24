@@ -1,0 +1,22 @@
+build:
+  define_macros: []
+  extra_compile_args: []
+  include_dirs: []
+  libraries: []
+  library_dirs: []
+  undef_macros: []
+info:
+  github_username: csdms
+  plugin_author: Community Surface Dynamics Modeling System
+  plugin_license: MIT
+  summary: PyMT plugin for the PRMS6 Surface component
+library:
+  entry_point:
+  - PRMSSurface=bmiprmssurface:bmi_prms_surface
+  language: fortran
+  register: ''
+plugin:
+  name: prms_surface
+  requirements:
+  - bmi-fortran=2.0
+  - prms
