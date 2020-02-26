@@ -1,0 +1,3 @@
+[submodule "examples/pipestem"]
+	path = examples/pipestem
+	url = https://github.com/mdpiper/pipestem.git
