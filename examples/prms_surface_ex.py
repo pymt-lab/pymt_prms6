@@ -49,16 +49,22 @@ try:
     m.get_grid_shape(grid_id, grid_shape)
 except RuntimeError:
     print(' - shape: n/a')
+else:
+    print(' - shape:', grid_shape)
 grid_spacing = np.empty(grid_rank, dtype=np.float64)
 try:
     m.get_grid_spacing(grid_id, grid_spacing)
 except RuntimeError:
     print(' - spacing: n/a')
+else:
+    print(' - spacing:', grid_spacing)
 grid_origin = np.empty(grid_rank, dtype=np.float64)
 try:
     m.get_grid_origin(grid_id, grid_origin)
 except RuntimeError:
     print(' - origin: n/a')
+else:
+    print(' - origin:', grid_origin)
 grid_x = np.empty(grid_size, dtype=np.float64)
 m.get_grid_x(grid_id, grid_x)
 print(' - x:', grid_x)
