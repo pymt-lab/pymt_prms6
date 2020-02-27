@@ -17,7 +17,7 @@ print(m.get_component_name())
 os.chdir(run_dir)
 m.initialize(config_file)
 
-# List the model's echange items.
+# List the model's exchange items.
 print('Number of input vars:', m.get_input_item_count())
 for var in m.get_input_var_names():
     print(' - {}'.format(var))
@@ -93,12 +93,20 @@ m.get_value(var_name, val)
 print(' - values at time {}:'.format(m.get_current_time()))
 print(val)
 
-# Get a reference to the temperature values and check that it updates.
+# Get a reference to the variable and check that it updates.
 ref = m.get_value_ptr(var_name)
 for _ in range(3):
     print(' - values (by ref) at time {}:'.format(m.get_current_time()))
     print(ref)
     m.update()
 
+# Set new variable values.
+print('Set values of {}...'.format(var_name))
+new = np.arange(grid_size, dtype=np.float32)
+print(' - values to set:', new)
+m.set_value(var_name, new)
+print(' - check that values were set:', ref)
+
 # Finalize the model.
 m.finalize()
+print('Done.')
