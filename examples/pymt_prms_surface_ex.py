@@ -5,21 +5,15 @@ from pymt.models import PRMSSurface
 
 
 run_dir = 'pipestem'
-config_file = 'control.default'
+config_file = 'control.simple1'
 
 
 # Instantiate the component and get its name.
 m = PRMSSurface()
 print(m.name)
 
-# Call setup to get default config file.
-defaults = m.setup(run_dir)
-print('Setup:')
-for item in defaults:
-    print(' - {}'.format(item))
-
-# Initialize the model.
-m.initialize(*defaults)
+# Initialize the model. (Skipping setup step)
+m.initialize(config_file, run_dir)
 
 # List the model's exchange items.
 print('Number of input vars:', len(m.input_var_names))
