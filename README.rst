@@ -77,7 +77,7 @@ be installed with:
 
 .. code::
 
-  conda install bmi-fortran=2.0 prms
+  conda install bmi-fortran=2.0 prms prms_surface
 
 To install `pymt_prms_surface`,
 

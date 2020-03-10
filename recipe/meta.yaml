@@ -23,11 +23,13 @@ requirements:
     - model_metadata
     - bmi-fortran=2.0 
     - prms 
+    - prms_surface
   run:
     - python
     - {{ pin_compatible('numpy') }}
     - bmi-fortran=2.0 
     - prms 
+    - prms_surface
 
 test:
   requires:
