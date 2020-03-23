@@ -100,18 +100,20 @@ print(' - values at time {}:'.format(m.get_current_time()))
 print(val)
 
 # Get a reference to the variable and check that it updates.
-ref = m.get_value_ptr(var_name)
-for _ in range(3):
-    print(' - values (by ref) at time {}:'.format(m.get_current_time()))
-    print(ref)
-    m.update()
+if m.get_grid_type(grid_id) != 'scalar':
+    ref = m.get_value_ptr(var_name)
+    for _ in range(3):
+        print(' - values (by ref) at time {}:'.format(m.get_current_time()))
+        print(ref)
+        m.update()
 
 # Set new variable values.
-print('Set values of {}...'.format(var_name))
-new = np.arange(grid_size, dtype=np.float32)
-print(' - values to set:', new)
-m.set_value(var_name, new)
-print(' - check that values were set:', ref)
+if var_name not in m.get_output_var_names():
+    print('Set values of {}...'.format(var_name))
+    new = np.arange(grid_size, dtype=np.float32)
+    print(' - values to set:', new)
+    m.set_value(var_name, new)
+    print(' - check that values were set:', ref)
 
 # Finalize the model.
 m.finalize()
