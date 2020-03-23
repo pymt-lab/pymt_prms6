@@ -16,6 +16,7 @@ print(m.get_component_name())
 # Initialize the model.
 os.chdir(run_dir)
 m.initialize(config_file)
+print(config_file)
 
 # List the model's exchange items.
 print('Number of input vars:', m.get_input_item_count())
@@ -27,6 +28,7 @@ for var in m.get_output_var_names():
 
 # Get variable info.
 var_name = 'hru_ppt'
+# var_name = 'dprst_flag'
 # var_name = 'soil_moist_max'
 # var_name = 'swrad'
 print('Variable {}'.format(var_name))
