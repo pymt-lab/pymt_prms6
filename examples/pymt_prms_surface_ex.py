@@ -7,12 +7,13 @@ from pymt.models import PRMSSurface
 run_dir = 'pipestem'
 config_file = 'control.simple1'
 
-
 # Instantiate the component and get its name.
 m = PRMSSurface()
 print(m.name)
 
 # Initialize the model. (Skipping setup step)
+print(run_dir)
+print(config_file)
 m.initialize(config_file, run_dir)
 
 # List the model's exchange items.
@@ -25,6 +26,7 @@ for var in m.output_var_names:
 
 # Get variable info.
 var_name = 'hru_ppt'   # vector
+# var_name = 'dprst_flag'   # scalar
 # var_name = 'nhru'      # scalar
 # var_name = 'dday_slope'  # rectilinear
 print('Variable {}'.format(var_name))
@@ -84,7 +86,7 @@ if m.grid_type(grid_id) != 'scalar':
         m.update()
 
 # Set new variable values.
-if m.grid_type(grid_id) != 'scalar':
+if var_name not in m.output_var_names:
     new = np.arange(m.grid_node_count(grid_id), dtype=np.float32)
     m.set_value(var_name, new)
     print('Set values of {}...'.format(var_name))
