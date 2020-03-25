@@ -96,7 +96,7 @@ print(' - new time:', m.get_current_time())
 
 # Get the variable values.
 print('Get values of {}...'.format(var_name))
-val = np.empty(grid_size, dtype=np.float32)
+val = np.empty(grid_size, dtype=m.get_var_type(var_name))
 m.get_value(var_name, val)
 print(' - values at time {}:'.format(m.get_current_time()))
 print(val)
@@ -112,7 +112,7 @@ if m.get_grid_type(grid_id) != 'scalar':
 # Set new variable values.
 if var_name not in m.get_output_var_names():
     print('Set values of {}...'.format(var_name))
-    new = np.arange(grid_size, dtype=np.float32)
+    new = np.arange(grid_size, dtype=m.get_var_type(var_name))
     print(' - values to set:', new)
     m.set_value(var_name, new)
     print(' - check that values were set:', ref)
