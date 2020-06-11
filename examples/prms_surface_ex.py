@@ -5,7 +5,7 @@ import numpy as np
 from pymt_prms_surface import PRMSSurface
 
 
-run_dir = 'pipestem'
+run_dir = '../meta/PRMSSurface'
 config_file = 'control.default'
 
 
