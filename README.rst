@@ -8,10 +8,10 @@ pymt_prms_surface
         :alt: Basic Model Interface
 
 .. image:: https://img.shields.io/badge/recipe-pymt_prms_surface-green.svg
-        :target: https://anaconda.org/conda-forge/pymt_prms_surface
+        :target: https://anaconda.org/csdms-stack/pymt_prms_surface
 
 .. image:: https://img.shields.io/travis/csdms/pymt_prms_surface.svg
-        :target: https://travis-ci.org/csdms/pymt_prms_surface
+        :target: https://travis-ci.org/pymt-lab/pymt_prms_surface
 
 .. image:: https://readthedocs.org/projects/pymt_prms-surface/badge/?version=latest
         :target: https://pymt_prms-surface.readthedocs.io/en/latest/?badge=latest
