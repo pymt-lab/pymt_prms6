@@ -13,10 +13,6 @@ pymt_prms_surface
 .. image:: https://img.shields.io/travis/csdms/pymt_prms_surface.svg
         :target: https://travis-ci.org/pymt-lab/pymt_prms_surface
 
-.. image:: https://readthedocs.org/projects/pymt_prms-surface/badge/?version=latest
-        :target: https://pymt_prms-surface.readthedocs.io/en/latest/?badge=latest
-        :alt: Documentation Status
-
 .. image:: https://img.shields.io/badge/code%20style-black-000000.svg
         :target: https://github.com/csdms/pymt
         :alt: Code style: black
@@ -26,7 +22,7 @@ PyMT plugin for the PRMS6 Surface component
 
 
 * Free software: MIT license
-* Documentation: https://prms-surface.readthedocs.io.
+* Documentation: https://www.usgs.gov/software/precipitation-runoff-modeling-system-prms
 
 
 
