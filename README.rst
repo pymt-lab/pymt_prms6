@@ -41,32 +41,25 @@ PRMSSurface `from pymt.models import PRMSSurface`
 Installing pymt
 ---------------
 
-Installing `pymt` from the `conda-forge` channel can be achieved by adding
-`conda-forge` to your channels with:
-
-.. code::
-
-  conda config --add channels conda-forge
-
 *Note*: Before installing `pymt`, you may want to create a separate environment
 into which to install it. This can be done with,
 
 .. code::
 
-  conda create -n pymt python=3.6
-  conda activate pymt
+  conda create -n pymt python=3 -c conda-forge
+  source activate pymt
 
-Once the `conda-forge` channel has been enabled, `pymt` can be installed with:
+Install `pymt` with:
 
 .. code::
 
-  conda install pymt
+  conda install pymt -c conda-forge
 
 It is possible to list all of the versions of `pymt` available on your platform with:
 
 .. code::
 
-  conda search pymt --channel conda-forge
+  conda search pymt -c conda-forge
 
 ----------------------------
 Installing pymt_prms_surface
@@ -77,10 +70,10 @@ be installed with:
 
 .. code::
 
-  conda install bmi-fortran=2.0 prms prms_surface
+  conda install bmi-fortran=2.0 prms prms_surface -c conda-forge -c csdms-stack
 
 To install `pymt_prms_surface`,
 
 .. code::
 
-  conda install pymt_prms_surface
+  conda install pymt_prms_surface -c conda-forge -c csdms-stack
