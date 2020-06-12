@@ -10,8 +10,8 @@ pymt_prms_surface
 .. image:: https://img.shields.io/badge/recipe-pymt_prms_surface-green.svg
         :target: https://anaconda.org/csdms-stack/pymt_prms_surface
 
-.. image:: https://img.shields.io/travis/csdms/pymt_prms_surface.svg
-        :target: https://travis-ci.org/pymt-lab/pymt_prms_surface
+.. image:: https://img.shields.io/travis/csdms-stack/pymt_prms_surface-recipe.svg
+        :target: https://travis-ci.org/csdms-stack/pymt_prms_surface-recipe
 
 .. image:: https://img.shields.io/badge/code%20style-black-000000.svg
         :target: https://github.com/csdms/pymt
