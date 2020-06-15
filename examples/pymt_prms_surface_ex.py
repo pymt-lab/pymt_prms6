@@ -4,8 +4,9 @@ import numpy as np
 from pymt.models import PRMSSurface
 
 
-run_dir = 'pipestem'
-config_file = 'control.simple1'
+run_dir = '../meta/PRMSSurface'
+config_file = 'control.default'
+
 
 # Instantiate the component and get its name.
 m = PRMSSurface()
