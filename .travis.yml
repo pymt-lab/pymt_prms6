@@ -45,4 +45,4 @@ install:
 script:
 - conda install -q --file=requirements-testing.txt
 - python -c 'import pymt_prms_surface'
-- bmi-test pymt_prms_surface.bmi:PRMSSurface -vvv
+# - bmi-test pymt_prms_surface.bmi:PRMSSurface -vvv
