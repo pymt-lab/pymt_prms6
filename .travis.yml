@@ -33,8 +33,8 @@ before_install:
 - export PATH="$(pwd)/anaconda/bin:$PATH"
 - hash -r
 - conda config --set always_yes yes --set changeps1 no
+- conda config --add channels csdms-stack
 - conda config --add channels conda-forge
-- conda config --append channels csdms-stack
 - conda create -n _testing python=$PYTHON
 - source activate _testing
 - conda info -a && conda list
