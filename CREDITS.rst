@@ -1,4 +1,12 @@
 Credits
 =======
 
-* Community Surface Dynamics Modeling System <csdms@colorado.edu>
+Development Lead
+----------------
+
+* Mark Piper
+
+Contributors
+------------
+
+* Rich McDonald
