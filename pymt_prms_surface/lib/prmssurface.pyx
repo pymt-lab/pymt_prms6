@@ -130,6 +130,8 @@ cdef class PRMSSurface:
     cdef int _bmi
     cdef char[2048] STR_BUFFER
 
+    METADATA = "../data/PRMSSurface"
+
     def __cinit__(self):
         self._bmi = bmi_new()
 
