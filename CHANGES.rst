@@ -1,6 +1,12 @@
 Changelog for pymt_prms_surface
 ===============================
 
+0.2.2 (unreleased)
+------------------
+
+- Nothing changed yet.
+
+
 0.2.1 (2020-10-10)
 ------------------
 
