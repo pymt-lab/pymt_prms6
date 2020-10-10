@@ -39,8 +39,7 @@ before_install:
 - source activate _testing
 - conda info -a && conda list
 install:
-- conda install -q --file=requirements-library.txt
-- conda install -q fortran-compiler
+- conda install -q --file=requirements-build.txt --file=requirements-library.txt
 - pip install -e .
 script:
 - conda install -q --file=requirements-testing.txt
