@@ -1,8 +1,8 @@
 Changelog for pymt_prms_surface
 ===============================
 
-0.3.0 (unreleased)
--------------------
+0.2.1 (2020-10-10)
+------------------
 
 - Re-wrap component with latest *babelizer* revisions
 

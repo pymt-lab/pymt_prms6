@@ -97,7 +97,7 @@ setup(
     author_email="csdms@colorado.edu",
     description="PyMT plugin for prms_surface",
     long_description=long_description,
-    version="0.3-dev_0",
+    version="0.2.1",
     url="https://github.com/pymt-lab/pymt_prms_surface",
     classifiers=[
         "Development Status :: 4 - Beta",
