@@ -122,7 +122,6 @@ cpdef to_string(bytes):
     except AttributeError:
         return bytes
 
-
 # start: prmssurface.pyx
 
 cdef class PRMSSurface:

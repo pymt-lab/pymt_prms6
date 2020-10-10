@@ -1,4 +1,4 @@
-name: prms_surface
+name: pymt_prms_surface
 language: fortran
-package: prms_surface
+package: pymt_prms_surface
 class: PRMSSurface
