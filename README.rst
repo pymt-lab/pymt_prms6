@@ -10,13 +10,14 @@ pymt_prms_surface
 .. image:: https://img.shields.io/badge/recipe-pymt_prms_surface-green.svg
         :target: https://anaconda.org/csdms-stack/pymt_prms_surface
 
-.. image:: https://img.shields.io/travis/pymt-lab/pymt_prms_surface.svg
-        :target: https://travis-ci.org/pymt-lab/pymt_prms_surface
+.. image:: https://github.com/pymt-lab/pymt_prms_surface/actions/workflows/test.yml/badge.svg
+        :target: https://github.com/pymt-lab/pymt_prms_surface/actions/workflows/test.yml
 
-.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
-        :target: https://github.com/csdms/pymt
-        :alt: Code style: black
+.. image:: https://github.com/pymt-lab/pymt_prms_surface/actions/workflows/flake8.yml/badge.svg
+        :target: https://github.com/pymt-lab/pymt_prms_surface/actions/workflows/flake8.yml
 
+.. image:: https://github.com/pymt-lab/pymt_prms_surface/actions/workflows/black.yml/badge.svg
+        :target: https://github.com/pymt-lab/pymt_prms_surface/actions/workflows/black.yml
 
 PyMT plugin for the PRMS6 Surface component
 
