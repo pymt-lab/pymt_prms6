@@ -2,5 +2,6 @@
 
 from .prmssurface import PRMSSurface
 
-__all__ = ["PRMSSurface",
+__all__ = [
+    "PRMSSurface",
 ]
